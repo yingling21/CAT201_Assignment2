@@ -1,0 +1,275 @@
+.tourist-spots {
+    padding: 1rem 2rem;
+    background-color: var(--background-color);
+  }
+  
+  .tourist-spots h1 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+  }
+  
+  .category-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+  
+  .category-tab {
+    padding: 1rem 2rem;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 8px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .category-tab:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  .category-tab.active {
+    background-color: var(--accent-color);
+    color: white;
+  }
+  
+  .spots-carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 400px; /* Reduced from 500px */
+  }
+  
+  .spots-carousel {
+    display: flex;
+    gap: 2rem;
+    height: 100%;
+    padding: 1rem;
+  }
+  
+  .spot-card {
+    flex: 1;
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    min-width: 300px;
+    height: fit-content; /* Added to prevent excess space */
+  }
+  
+  .spot-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .spot-card img {
+    width: 100%;
+    height: 200px; /* Reduced from 250px */
+    object-fit: cover;
+  }
+  
+  .spot-content {
+    padding: 1rem; /* Reduced from 1.5rem */
+  }
+  
+  .spot-content h2 {
+    color: var(--text-color);
+    font-size: 1.3rem; /* Reduced from 1.5rem */
+    margin-bottom: 0.5rem; /* Reduced from 1rem */
+    font-weight: 600;
+  }
+  
+  .spot-content p {
+    color: var(--text-color);
+    font-size: 1rem; /* Reduced from 1.1rem */
+    line-height: 1.4; /* Reduced from 1.6 */
+    margin-bottom: 0.5rem; /* Added to reduce space */
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-button:hover:not(:disabled) {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-50%) scale(1.1);
+  }
+  
+  .carousel-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .carousel-button.previous {
+    left: -25px;
+  }
+  
+  .carousel-button.next {
+    right: -25px;
+  }
+  
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 2rem;
+  }
+  
+  .indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .indicator.active {
+    background-color: var(--accent-color);
+    transform: scale(1.2);
+  }
+  
+/* Scoped CSS for TouristSpots */
+
+/* Modal Overlay */
+.tourist-spots .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensures modal appears above all other elements */
+  }
+  
+  /* Modal Content */
+  .tourist-spots .modal-content {
+    background: var(--secondary-color); /* Matches your design theme */
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease-in-out; /* Optional animation */
+  }
+  
+  /* Modal Image */
+  .tourist-spots .modal-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* Modal Close Button */
+  .tourist-spots .modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .tourist-spots .modal-close:hover {
+    color: var(--accent-color);
+    transform: scale(1.2);
+  }
+  
+  /* Modal Text */
+  .tourist-spots .modal-content h2 {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .tourist-spots .modal-content p {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  /* Optional Fade-In Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .spots-carousel-container {
+      height: auto;
+      padding: 0 1rem;
+    }
+  
+    .spots-carousel {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .spot-card {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+  
+    .carousel-button {
+      display: none;
+    }
+  
+    .tourist-spots h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  
+    .category-tab {
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+    }
+  }
+  

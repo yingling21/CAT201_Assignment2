@@ -1,0 +1,40 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #2563eb;
+    color: white;
+    z-index: 50;
+  }
+  
+.nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+.nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+.nav-link {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+  }
+  
+.nav-link:hover {
+    text-decoration: underline;
+  }
+  
+.nav-link:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
