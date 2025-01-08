@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CAT201_Assignment2/static/css/main.d330bb83.css",
+    "main.js": "/CAT201_Assignment2/static/js/main.b599d2a3.js",
+    "index.html": "/CAT201_Assignment2/index.html",
+    "main.d330bb83.css.map": "/CAT201_Assignment2/static/css/main.d330bb83.css.map",
+    "main.b599d2a3.js.map": "/CAT201_Assignment2/static/js/main.b599d2a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d330bb83.css",
+    "static/js/main.b599d2a3.js"
+  ]
+}
