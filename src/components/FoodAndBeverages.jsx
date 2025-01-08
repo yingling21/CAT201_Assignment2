@@ -22,49 +22,49 @@ const FoodAndBeverages = () => {
       name: "Penang Char Kway Teow",
       description: "Stir-fried rice cake strips with shrimp and chives.",
       longDescription: "A beloved Penang street food dish featuring flat rice noodles stir-fried with prawns, cockles, Chinese lap cheong (sausage), eggs, bean sprouts, and chives in a mix of soy sauces.",
-      image: "/images/char-kway-teow.jpg",
+      image: "./images/char-kway-teow.jpg",
       category: ["all", "local"]
     },
     {
       name: "Nasi Kandar",
       description: "Rice served with a variety of curries and side dishes.",
       longDescription: "A Malaysian food restaurant meal with steamed rice served with a variety of curries and side dishes. Originally a dish sold by Indian Muslim street vendors, it has become a staple of Penang cuisine.",
-      image: "/images/nasi-kandar.jpg",
+      image: "./images/nasi-kandar.jpg",
       category: ["all", "local"]
     },
     {
       name: "Penang Laksa",
       description: "Spicy-sour fish soup with rice noodles.",
       longDescription: "A tangy and spicy noodle soup made with mackerel, tamarind, and various herbs and spices. Topped with mint leaves, pineapple, cucumber, and torch ginger flower, it's a unique combination of flavors.",
-      image: "/images/penang-laksa.jpg",
+      image: "./images/penang-laksa.jpg",
       category: ["all", "local"]
     },
     {
       name: "Kway Chap",
       description: " Originating from Teochew cuisine, Kway Chap features flat, wide rice noodles served in a flavorful, herbal-infused broth.",
       longDescription: "Kway chap is a braised duck noodle with duck meat, skin, intestine, coagulated blood and braised duck egg in a herbal broth unique to Penangites. This is the most common comfort food you can find in Penang but not widely available in all restaurants. Your best find would be at Lebuh Kimberley.",
-      image: "/images/kway-chap.jpg",
+      image: "./images/kway-chap.jpg",
       category: ["all", "street"]
     },
     {
       name: "Oh-Chien (Oyster Omelette)",
       description: "Comes with juicy, fresh oysters atop a bed of crispy yet sticky egg batter fried to perfection",
       longDescription: "Fried Oyster Omelette, also known as ‘Oh Chien’ by local is one of the must-try street food in Penang. Comes with juicy, fresh oysters atop a bed of crispy yet sticky egg batter fried to perfection, this delicacy is guaranteed to please your taste buds, especially paired with the sour yet spicy chilli sauce.",
-      image: "/images/oh-chien.jpg",
+      image: "./images/oh-chien.jpg",
       category: ["all", "local", "street"]
     },
     {
       name: "Curry Mee",
       description: "Spicy coconut milk-based noodle soup with toppings like cockles and tofu.",
       longDescription: "A beloved Penang street food dish featuring flat rice noodles stir-fried with prawns, cockles, Chinese lap cheong (sausage), eggs, bean sprouts, and chives in a mix of soy sauces.",
-      image: "/images/curry-mee.jpg",
+      image: "./images/curry-mee.jpg",
       category: ["all", "local"]
     },
     {
       name: "Hokkien Mee (Prawn Noodle)",
       description: "Prawn noodle soup with pork slices and boiled eggs.",
       longDescription: "Penang Hokkien Mee is always garnished with fried shallots and special spicy prawns. It’s available in most coffee shops and street food stalls in Penang.",
-      image: "/images/hokkien-mee.jpg",
+      image: "./images/hokkien-mee.jpg",
       category: ["all", "local"]
     },
     {

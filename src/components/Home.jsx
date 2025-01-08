@@ -6,7 +6,7 @@ const Home = () => {
     <div id="home" className="home">
       <div className="hero">
         <img 
-          src="/images/penang-hero.jpg" 
+          src="./images/penang-hero.jpg" 
           alt="Penang cityscape at night" 
           className="hero-image"
         />
