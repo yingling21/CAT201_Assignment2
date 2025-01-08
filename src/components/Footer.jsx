@@ -38,7 +38,7 @@ const Footer = () => {
           </p>
           <div className="footer-logo">
             <img 
-              src="/images/visit-penang-logo.jpg" 
+              src="./images/visit-penang-logo.jpg" 
               alt="Visit Penang Logo"
             />
           </div>
