@@ -15,10 +15,11 @@ This project highlights Penang's attractions and aims to create an engaging and 
 - **Blog**: Informative posts about Penang
 
 ## Team Members
-- Chin Ying Ling
-- Joanne Loi Jin Xu
-- Saw Yee Xuan
-- Lim Yi Jie
+- Chin Ying Ling, 22301204
+- Joanne Loi Jin Xu, 22303573 
+- Saw Yee Xuan, 22305488
+- Lim Yi Jie, 22304136
+
 
 ## Getting Started
 
